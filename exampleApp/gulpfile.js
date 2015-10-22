@@ -45,7 +45,7 @@ gulp.task('minify-js', function() {
     .pipe(gulp.dest('./dist/'));
 });
 gulp.task('copy-bower-components', function() {
-  gulp.src('./app/bower_components/**')
+  gulp.src('./bower_components/**')
     .pipe(gulp.dest('dist/bower_components'));
 });
 gulp.task('copy-html-files', function() {
