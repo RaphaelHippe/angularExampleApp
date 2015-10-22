@@ -1,0 +1,1 @@
+angular.module("baseModule").config(["$routeProvider",function(e){e.when("/",{templateUrl:"components/home/homeView.html",controller:"HomeCtrl"}).otherwise({redirectTo:"/"})}]);
