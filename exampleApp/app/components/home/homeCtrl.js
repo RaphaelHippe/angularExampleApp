@@ -5,6 +5,9 @@ module.controller('HomeCtrl', ['$scope',
     $scope.sayWelcome = function () {
       $scope.welcome = 'Welcome World!';
     };
+    $scope.sayGoodbye = function () {
+      $scope.goodbye = 'Goodbye World!';
+    };
 
 
   }

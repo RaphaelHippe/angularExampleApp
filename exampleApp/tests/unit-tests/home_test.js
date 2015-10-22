@@ -1,5 +1,5 @@
 describe('HomeCtrl', function() {
-  beforeEach(module('homeModule'));
+  beforeEach(angular.mock.module("homeModule"));
 
   var $controller;
 
@@ -16,4 +16,14 @@ describe('HomeCtrl', function() {
       expect($scope.welcome).toEqual('Welcome World!');
     });
   });
+
+  describe('$scope.sayGoodbye', function() {
+    it('sets the value of $scope.goodbye to "Goodbye World!"', function() {
+      var $scope = {};
+      var controller = $controller('HomeCtrl', { $scope: $scope });
+      $scope.sayGoodbye();
+      expect($scope.goodbye).toEqual('Goodbye World!');
+    });
+  });
+
 });
